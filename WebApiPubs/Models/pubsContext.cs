@@ -32,6 +32,7 @@ namespace WebApiPubs.Models
         public virtual DbSet<Titles> Titles { get; set; }
         public virtual DbSet<Titleview> Titleview { get; set; }
 
+        /*
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -40,6 +41,7 @@ namespace WebApiPubs.Models
                 optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=pubs;Trusted_Connection=True;");
             }
         }
+        */
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
